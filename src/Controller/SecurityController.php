@@ -6,6 +6,7 @@ use App\Entity\User;
 use App\Form\Model\UserRegistrationFormModel;
 use App\Form\UserRegistrationFormType;
 use App\Security\LoginFormAuthenticator;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
@@ -72,11 +73,11 @@ class SecurityController extends AbstractController
             $em->flush();
 
             // --------------- EMAIL SETUP --------------------------- //
-            $email = (new Email())
+            $email = (new TemplatedEmail())
                 ->from('alienmailr@example.com')
                 ->to($user->getEmail())
                 ->subject('Welcome to the Space Bar!')
-                ->text("Nice to meet you {$user->getFirstName()}! ");
+                ->htmlTemplate('email/welcome.html.twig');
 
             $mailer->send($email);
             // ------------------------------------------------------- //

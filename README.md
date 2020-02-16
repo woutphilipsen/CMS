@@ -114,3 +114,7 @@ And as always, thanks so much for your support and letting
 us do what we love!
 
 <3 Your friends at SymfonyCasts
+
+MAILTRAP
+
+https://mailtrap.io/inboxes/832385/messages/1581263046/text
