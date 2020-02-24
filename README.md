@@ -1,32 +1,33 @@
-Open terminal and cd into CMS
+// Open terminal and cd into CMS
 
-run:
+// run:
 
 composer install
 
-open .env file & adjust settings for local database url:
+// open .env file & adjust settings for local database url:
 
 DATABASE_URL=mysql://root:@127.0.0.1:3306/the_spacebar
 
-startup local sql server
+// startup local sql server
 
-go back to terminal & run:
+// go back to terminal & run:
 
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixtures:load
 
-start up server at localhost:8000, run:
+// start up server at localhost:8000, run:
 
 symfony serve
 
-to unlock content management (admin user):
+// to unlock content management (admin user):
 
 username: admin1@thespacebar.com
 
 pwd: engage
 
 some pages:
+  
   https://localhost:8000/account
   
   https://localhost:8000/admin/article
