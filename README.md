@@ -13,7 +13,9 @@ DATABASE_URL=mysql://root:@127.0.0.1:3306/the_spacebar
 // go back to terminal & run:
 
 php bin/console doctrine:database:create
+
 php bin/console doctrine:migrations:migrate
+
 php bin/console doctrine:fixtures:load
 
 // start up server at localhost:8000, run:
