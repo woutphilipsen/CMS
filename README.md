@@ -1,4 +1,4 @@
-// Open terminal and cd into CMS
+**Open terminal and cd into CMS**
 
 // run:
 
