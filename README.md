@@ -22,7 +22,7 @@ DATABASE_URL=mysql://root:@127.0.0.1:3306/the_spacebar
 
 **start up server at localhost:8000, run:**
 
-symfony serve
+symfony serve **OR** php bin/console server:run
 
 **to unlock content management (admin user):**
 
