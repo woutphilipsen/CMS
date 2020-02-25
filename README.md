@@ -1,4 +1,5 @@
 **Add following line to your php.ini file**
+
 extension=php_xsl.dll
 
 **Open terminal and cd into CMS**
